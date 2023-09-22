@@ -1,6 +1,6 @@
 ext_port = {
   nodered = {
-    dev  = [1980]
+    dev  = [1980,1981]
     prod = [1880]
   }
   influxdb = {
