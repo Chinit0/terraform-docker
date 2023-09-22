@@ -34,7 +34,7 @@ resource "docker_volume" "container_volume"{
     }
     provisioner "local-exec" {
       when = destroy
-      command = "sudo tar -czvf ${path.cwd}/../backup/${self.name}.tar.gz ${self.mountpoint/}"
+      command = "sudo tar -czvf ${path.cwd}/../backup/${self.name}.tar.gz ${self.mountpoint}/"
       on_failure = fail
     }
 }
